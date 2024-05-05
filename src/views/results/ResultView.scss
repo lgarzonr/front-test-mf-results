@@ -1,0 +1,133 @@
+.results-view {
+  display: flex;
+  padding: 20px;
+  padding-inline: 80px;
+  gap: 15px;
+  background-color: #f5f5f5;
+
+  &__first-column {
+    width: 30%;
+    background-color: #f5f5f5;
+  }
+  &__second-column {
+    flex-grow: 1;
+  }
+
+  &__list-container {
+    background-color: white;
+  }
+
+  &__title {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 30px;
+    > p {
+      margin: 0;
+      font-weight: 200;
+      font-size: 16px;
+    }
+  }
+
+  &__list-item {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 15px;
+    padding: 12px;
+    border-bottom: #f5f5f5 1px solid;
+
+    &-image {
+      grid-row: 1/5;
+      width: auto;
+      height: 180px;
+      place-self: center;
+    }
+
+    &-title {
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      margin: 0;
+      align-self: flex-end;
+      cursor: pointer;
+      > a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    &-price {
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      align-self: center;
+      margin: 0;
+    }
+
+    &-condition {
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    &-free-ship-label {
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: #00a650;
+      margin: 0;
+    }
+  }
+}
+
+// .results {
+//   width: 70%;
+//   background-color: white;
+
+//   &__item {
+//     display: grid;
+//     grid-template-columns: 30% 70%;
+//     column-gap: 15px;
+//     padding: 12px;
+//     border-bottom: #f5f5f5 1px solid;
+
+//     &-image {
+//       grid-row: 1/5;
+//       width: auto;
+//       height: 180px;
+//       place-self: center;
+//     }
+
+//     &-title {
+//       font-family: Roboto, Helvetica, Arial, sans-serif;
+//       font-size: 18px;
+//       font-weight: 300;
+//       margin: 0;
+//       align-self: flex-end;
+//     }
+
+//     &-price {
+//       font-family: Roboto, Helvetica, Arial, sans-serif;
+//       font-size: 20px;
+//       font-weight: 400;
+//       align-self: center;
+//       margin: 0;
+//     }
+
+//     &-condition {
+//       font-family: Roboto, Helvetica, Arial, sans-serif;
+//       font-size: 12px;
+//       font-weight: 400;
+//       margin: 0;
+//     }
+
+//     &-free-ship-label {
+//       font-family: Roboto, Helvetica, Arial, sans-serif;
+//       font-size: 12px;
+//       font-weight: 600;
+//       color: #00a650;
+//       margin: 0;
+//     }
+//   }
+// }
