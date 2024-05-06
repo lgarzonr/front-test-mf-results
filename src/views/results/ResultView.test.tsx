@@ -2,7 +2,7 @@ import React from "react";
 import ResultsView from "./ResultView";
 import { render } from "@testing-library/react";
 
-jest.mock("./ResultViewModel", () => () => ({
+jest.mock("./ResultsView", () => () => ({
   resultItems: [
     {
       id: "1",
@@ -28,10 +28,5 @@ describe("ResultView Test", () => {
   it("should render the ResultView component", () => {
     const view = render(<ResultsView></ResultsView>);
     expect(view.getByText("Root Category")).toBeTruthy();
-
-    // const button = view.getByTestId("SearchIcon");
-    // userEvent.click(button);
-
-    // expect(onSearchClick).toHaveBeenCalledTimes(1);
   });
 });
