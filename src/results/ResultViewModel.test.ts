@@ -21,7 +21,7 @@ const mockGetItemsBySearch = jest.fn().mockResolvedValue({
     total: 1,
   },
 });
-jest.mock("../../services/items/itemsModel", () => ({
+jest.mock("../services/items/itemsModel", () => ({
   getItemsBySearch: (...p: any) => mockGetItemsBySearch(...p),
 }));
 

@@ -6,6 +6,7 @@ import { formattedNumber } from "../utils/format";
 import ResultItem from "../components/ResultItem/ResultItem";
 
 const ResultsView = () => {
+
   const { resultItems, categories, resultTotal } = ResultsViewModel();
   return (
     <div className="results-view">
