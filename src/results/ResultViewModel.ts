@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import {
   ItemsBySearchResponse,
   getItemsBySearch,
-} from "../../services/items/itemsModel";
+} from "../services/items/itemsModel";
 
 const ResultsViewModel = () => {
   const [resultItems, setResultItems] = useState<

@@ -2,7 +2,7 @@ import React from "react";
 import ResultsView from "./ResultView";
 import { render } from "@testing-library/react";
 
-jest.mock("./ResultsView", () => () => ({
+jest.mock("./ResultViewModel", () => () => ({
   resultItems: [
     {
       id: "1",

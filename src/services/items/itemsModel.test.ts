@@ -1,33 +1,24 @@
 import { getItemsBySearch, ItemsBySearchResponse } from "./itemsModel";
 
 const mockHttpClientGet = jest.fn().mockResolvedValue({
-  results: [
-    {
-      id: "1",
-      title: "Item 1",
-      currency_id: "USD",
-      price: 10,
-      thumbnail: "https://example.com/item1.jpg",
-      condition: "new",
-      shipping: {
+  data: {
+    categories: ["Root Category"],
+    items: [
+      {
+        condition: "new",
         free_shipping: true,
-      },
-    },
-  ],
-  filters: [
-    {
-      id: "category",
-      name: "Category",
-      values: [
-        {
-          id: "1",
-          name: "Category 1",
-          path_from_root: [{ id: "1", name: "Root Category" }],
+        id: "1",
+        picture: "https://example.com/item1.jpg",
+        price: {
+          amount: 10,
+          currency: "USD",
+          decimals: 0,
         },
-      ],
-    },
-  ],
-  paging: { total: 1 },
+        title: "Item 1",
+      },
+    ],
+    total: 1,
+  },
 });
 jest.mock("../../utils/httpClient", () => ({
   get: (...p: any) => mockHttpClientGet(...p),
